@@ -43,7 +43,7 @@ export default function Home() {
           rel="noreferrer"
         >
           <span className="font-chakra text-neutral-content mt-2 rounded-sm bg-[#dffe00] p-4 leading-tight">
-            Launh App
+            Launch App
           </span>
         </Link>
       </div>
