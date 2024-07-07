@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Header } from '~/app/components/header'
+import { Footer } from '~/app/components/footer'
 
 import LocalFont from 'next/font/local'
 
@@ -67,7 +69,9 @@ export default function RootLayout({
           process.env.NODE_ENV === 'development' ? 'debug-screens' : undefined
         }`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
