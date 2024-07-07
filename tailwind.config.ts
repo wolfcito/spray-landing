@@ -10,6 +10,9 @@ const config: Config = {
 
   theme: {
     extend: {
+      colors: {
+        mode: '#dffe00',
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -37,6 +40,7 @@ const config: Config = {
           'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
+        'fade-fast': 'fade-in 0.3s ease-in-out forwards',
         'fade-in': 'fade-in 3s ease-in-out forwards',
         title: 'title 3s ease-out forwards',
         'fade-left': 'fade-left 3s ease-in-out forwards',
