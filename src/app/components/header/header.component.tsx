@@ -2,12 +2,13 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import Image from 'next/image'
 import sprayIcon from '~/public/favicon.png'
+import { GithubIcon } from '~/app/icons'
 
 export function Header() {
   return (
     <div
       className={clsx(
-        'sticky top-0 z-20 flex h-16 items-center justify-between bg-black/75 px-4'
+        'sticky top-0 z-20 flex h-16 items-center justify-between bg-black/75 px-4',
       )}
     >
       <div className="ml-4 mr-6 items-center gap-2">
@@ -34,16 +35,14 @@ export function Header() {
           </div>
         </Link>
       </div>
-      <div className="bg-mode mx-2 my-16 flex text-center text-sm">
+      <div className="bg-mode mx-2 my-16 flex text-center text-sm rounded-full">
         <Link
-          href="https://app.modespray.xyz"
+          href="https://github.com/wolfcito/mode-spray"
           passHref
           target="_blank"
           rel="noreferrer"
         >
-          <span className="font-chakra bg-mode mt-2 rounded-sm p-4 leading-tight text-black">
-            Launch
-          </span>
+          <GithubIcon className="m-1" />
         </Link>
       </div>
     </div>
