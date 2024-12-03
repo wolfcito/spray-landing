@@ -6,10 +6,13 @@ export function Tools() {
   return (
     <div className="mx-2 flex w-screen flex-col items-center justify-center bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <div className="animate-fade-in mt-36 flex flex-col text-center">
-        <div className="flex">
-          <h1 className="text-edge-outline animate-title z-10 cursor-default whitespace-nowrap bg-[#dffe00] bg-clip-text pb-4 font-display text-4xl text-transparent duration-100 sm:text-6xl">
-            Blockchain Tools
+        <div className="flex flex-col">
+          <h1 className="text-center text-edge-outline animate-title z-10 cursor-default whitespace-nowrap bg-[#dffe00] bg-clip-text pb-4 font-display text-4xl text-transparent duration-100 sm:text-6xl">
+            Blockchain Tools to Complement Mode Spray
           </h1>
+          <div className="text-center text-2xl text-white">
+            Explore essential tools that work seamlessly with Mode Spray
+          </div>
         </div>
       </div>
 
@@ -34,6 +37,9 @@ export function Tools() {
             </p>
           </Link>
         ))}
+      </div>
+      <div className="animate-fade-in text-center text-2xl text-white">
+        Maximize your blockchain experience with these reliable tools. 🚀
       </div>
     </div>
   )
